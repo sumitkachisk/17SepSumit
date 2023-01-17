@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestCases.InventaryPageTest">
+        <methods>
+          <include name="closedBrowser"/>
+          <include name="SwagLabsVerifyTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestCases.InventaryPageTest -->
+      <class name="TestCases.CartPageTest">
+        <methods>
+          <include name="YouCartLabelTest"/>
+          <include name="Cartsetup"/>
+          <include name="closedbrowser"/>
+        </methods>
+      </class> <!-- TestCases.CartPageTest -->
+      <class name="TestCases.FailTest">
+        <methods>
+          <include name="UrlVerifytest"/>
+          <include name="closeBrowser"/>
+          <include name="ProductLabelTest"/>
+          <include name="setup"/>
+          <include name="LogintoAppTest"/>
+        </methods>
+      </class> <!-- TestCases.FailTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
